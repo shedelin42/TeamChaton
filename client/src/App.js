@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+//jQuery
+import '../node_modules/jquery/src/jquery';
+
+//main css
 import './App.css';
+
+//bootstrap stuff
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.js';
+
+//font awesome
+import '../node_modules/font-awesome/css/font-awesome.css';
+
+import Header from './partials/header';
+import AppRouter from './router';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+          <AppRouter/>
       </div>
     );
   }
